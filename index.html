@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bibimehak Doddamani — CSE Undergraduate, Data Analytics & Machine Learning Enthusiast, and Graphic Designer.">
+  <title>Bibimehak Doddamani | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --card: #121620;
+      --text: #f4f6f8;
+      --muted: #a9b0bc;
+      --line: #252b36;
+      --accent: #7c5cff;
+      --accent2: #28d7b0;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(92%, var(--max)); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(11,13,18,.86); backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .inner { height: 70px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 800; letter-spacing: -.04em; }
+    .logo span { color: var(--accent); }
+    .links { display: flex; gap: 25px; color: var(--muted); font-size: .92rem; }
+    .links a:hover { color: var(--text); }
+    .hero { padding: 105px 0 90px; }
+    .eyebrow { color: var(--accent2); font-weight: 700; margin-bottom: 16px; }
+    h1 { font-size: clamp(3rem, 8vw, 6.3rem); line-height: .98; letter-spacing: -.07em; max-width: 900px; }
+    .gradient { background: linear-gradient(90deg, var(--text), #9b8cff, var(--accent2)); -webkit-background-clip: text; color: transparent; }
+    .hero p { max-width: 730px; margin: 25px 0; color: var(--muted); font-size: 1.12rem; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn { padding: 12px 18px; border: 1px solid var(--line); border-radius: 10px; font-weight: 700; }
+    .btn.primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+    .btn:hover { transform: translateY(-2px); }
+    section { padding: 78px 0; border-top: 1px solid var(--line); }
+    .section-head { margin-bottom: 35px; }
+    .section-head h2 { font-size: 2.2rem; letter-spacing: -.04em; }
+    .section-head p { color: var(--muted); margin-top: 6px; }
+    .about { display: grid; grid-template-columns: 1.3fr .7fr; gap: 55px; }
+    .about p { color: var(--muted); font-size: 1.05rem; }
+    .facts { display: grid; gap: 12px; }
+    .fact { background: var(--card); border: 1px solid var(--line); padding: 17px; border-radius: 12px; }
+    .fact small { display:block; color:var(--muted); }
+    .fact strong { font-size: 1.02rem; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+      padding: 25px; transition: .2s ease;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #3b4250; }
+    .card h3 { margin-bottom: 9px; font-size: 1.3rem; }
+    .card p { color: var(--muted); }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+    .tag { font-size:.78rem; color:#d8dce3; border:1px solid var(--line); border-radius:999px; padding:5px 9px; }
+    .skills { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; }
+    .skill-group h3 { font-size: 1rem; margin-bottom: 10px; color: var(--accent2); }
+    .skill-group p { color:var(--muted); }
+    .timeline { display:grid; gap:18px; }
+    .timeline-item { border-left:2px solid var(--accent); padding: 4px 0 4px 22px; }
+    .timeline-item .date { color:var(--accent2); font-size:.84rem; font-weight:700; }
+    .timeline-item p { color:var(--muted); }
+    .contact { display:flex; flex-wrap:wrap; gap:12px; }
+    footer { padding: 30px 0 45px; color: var(--muted); font-size:.9rem; }
+    @media(max-width:800px) {
+      .links { display:none; }
+      .about, .grid, .skills { grid-template-columns: 1fr; }
+      .hero { padding-top:75px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container inner">
+      <a class="logo" href="#">B<span>.</span>D</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero container">
+      <div class="eyebrow">CSE Undergraduate · Data · AI · Creative Design</div>
+      <h1>Building with <span class="gradient">data, technology & creativity.</span></h1>
+      <p>
+        I'm Bibimehak Doddamani, a Computer Science Engineering undergraduate interested in
+        Data Analytics, Machine Learning, AI, IoT, and visual design. I enjoy turning data and
+        ideas into practical, user-focused solutions.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/bibimehak" target="_blank">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/bibimehak-doddamani-485b87303/" target="_blank">LinkedIn ↗</a>
+        <a class="btn" href="mailto:doddamanibibimehak@gmail.com">Email</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container about">
+        <div>
+          <div class="section-head">
+            <h2>About me</h2>
+            <p>Curious, hands-on, and continuously learning.</p>
+          </div>
+          <p>
+            I am a Computer Science Engineering undergraduate pursuing my bachelor's degree at
+            Angadi Institute of Technology and Management, Belagavi, with a CGPA of 8.54.
+            My main interests are data analytics, machine learning, AI, statistical analysis,
+            visualization, and solving business problems using data-driven insights.
+          </p>
+          <br>
+          <p>
+            Alongside technical work, I have experience creating social-media creatives,
+            e-commerce visuals, promotional content, motion graphics, and short-form videos
+            using Adobe tools. This combination of analytical thinking and visual communication
+            helps me approach projects from both technical and user-experience perspectives.
+          </p>
+        </div>
+        <div class="facts">
+          <div class="fact"><small>Education</small><strong>B.E. Computer Science Engineering</strong></div>
+          <div class="fact"><small>Institution</small><strong>Angadi Institute of Technology & Management</strong></div>
+          <div class="fact"><small>CGPA</small><strong>8.54 / 10</strong></div>
+          <div class="fact"><small>Expected Graduation</small><strong>2027</strong></div>
+          <div class="fact"><small>Location</small><strong>Belagavi, India</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured projects</h2>
+          <p>Selected technical and creative work.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>IoT Smart Waste Management System</h3>
+            <p>
+              An IoT-based smart-city solution using ultrasonic sensors and ESP8266 to monitor
+              bin fill levels in real time. The system supports cloud visualization, threshold
+              alerts, and dynamic route planning for more efficient waste collection.
+            </p>
+            <div class="tags"><span class="tag">Arduino</span><span class="tag">ESP8266</span><span class="tag">C/C++</span><span class="tag">IoT</span><span class="tag">Sensors</span></div>
+          </article>
+
+          <article class="card">
+            <h3>AI Smart Agriculture Platform</h3>
+            <p>
+              An AI and IoT platform designed to monitor crop conditions and support data-driven
+              farming decisions. It analyzes soil, weather, and crop data while enabling real-time
+              monitoring, automated irrigation, and dashboard-based insights.
+            </p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">TensorFlow</span><span class="tag">IoT</span><span class="tag">JavaScript</span></div>
+          </article>
+
+          <article class="card">
+            <h3>E-Commerce Product Creative Design</h3>
+            <p>
+              Product-focused creative work for sportswear and lifestyle concepts, including
+              banners, marketplace visuals, promotions, social-media adaptations, and branded
+              layouts with strong visual hierarchy.
+            </p>
+            <div class="tags"><span class="tag">Photoshop</span><span class="tag">Illustrator</span><span class="tag">Figma</span><span class="tag">Canva</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Motion Graphics & Short-Form Video</h3>
+            <p>
+              Promotional Reels, Stories, and short-form videos featuring animated typography,
+              transitions, product reveals, visual effects, and platform-optimized edits for
+              fashion, sports, and lifestyle concepts.
+            </p>
+            <div class="tags"><span class="tag">After Effects</span><span class="tag">Premiere Pro</span><span class="tag">Photoshop</span><span class="tag">Illustrator</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Student Data Management & Reporting</h3>
+            <p>
+              Organized student information in structured Excel spreadsheets using sorting,
+              filtering, formatting, and basic formulas to maintain accurate records and create
+              clear reports.
+            </p>
+            <div class="tags"><span class="tag">MS Excel</span><span class="tag">MS Word</span><span class="tag">Data Management</span></div>
+          </article>
+
+          <article class="card">
+            <h3>Excel Task & Expense Tracker</h3>
+            <p>
+              An Excel-based tracker for tasks, deadlines, and expenses using formulas, tables,
+              sorting, filtering, and a summary view for organized record management.
+            </p>
+            <div class="tags"><span class="tag">MS Excel</span><span class="tag">Formulas</span><span class="tag">Data Organization</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>A mix of software development, analytics, hardware, and creative skills.</p>
+        </div>
+        <div class="skills">
+          <div class="card skill-group">
+            <h3>Programming</h3>
+            <p>Python · C · C++ · Java · JavaScript · HTML · CSS</p>
+          </div>
+          <div class="card skill-group">
+            <h3>Data & Analytics</h3>
+            <p>Pandas · NumPy · Basic Machine Learning · Data Visualization · Statistical Analysis</p>
+          </div>
+          <div class="card skill-group">
+            <h3>Databases & Cloud</h3>
+            <p>MySQL · MongoDB · Git · GitHub · AWS (Basic)</p>
+          </div>
+          <div class="card skill-group">
+            <h3>IoT & Hardware</h3>
+            <p>Arduino · Raspberry Pi · ESP8266 · Ultrasonic Sensors · Microcontrollers</p>
+          </div>
+          <div class="card skill-group">
+            <h3>Creative Tools</h3>
+            <p>Adobe Photoshop · Illustrator · After Effects · Premiere Pro · Figma · Canva</p>
+          </div>
+          <div class="card skill-group">
+            <h3>Professional</h3>
+            <p>Communication · Team Collaboration · Time Management · Problem Solving · Documentation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="container">
+        <div class="section-head">
+          <h2>Learning & activities</h2>
+          <p>Academic, hackathon, workshop, and community involvement.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><div class="date">2026</div><h3>International Conference on TICS</h3><p>Participated in the international conference organized by VTU & KARRC RAS.</p></div>
+          <div class="timeline-item"><div class="date">2026</div><h3>National-Level Hackathon · Bagalkot</h3><p>Participated in a national-level hackathon.</p></div>
+          <div class="timeline-item"><div class="date">2025</div><h3>Smart India Hackathon</h3><p>Participated in Smart India Hackathon organized by the Government of India.</p></div>
+          <div class="timeline-item"><div class="date">2025</div><h3>Indradhanu International Grand Challenge</h3><p>Participated in the international grand challenge in Pune.</p></div>
+          <div class="timeline-item"><div class="date">2025</div><h3>Python for Data Science</h3><p>Completed training covering NumPy, Pandas, and Matplotlib through Great Learning.</p></div>
+          <div class="timeline-item"><div class="date">2025</div><h3>Python Programming Workshop</h3><p>Participated in a Python programming workshop.</p></div>
+          <div class="timeline-item"><div class="date">Ongoing</div><h3>VENCER · AITM</h3><p>Active coordinator contributing to technical and non-technical events.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Let's connect</h2>
+          <p>Open to learning, collaboration, and interesting technical opportunities.</p>
+        </div>
+        <div class="contact">
+          <a class="btn primary" href="mailto:doddamanibibimehak@gmail.com">doddamanibibimehak@gmail.com</a>
+          <a class="btn" href="https://github.com/bibimehak" target="_blank">github.com/bibimehak</a>
+          <a class="btn" href="https://www.linkedin.com/in/bibimehak-doddamani-485b87303/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Bibimehak Doddamani · Built for GitHub Pages</div>
+  </footer>
+</body>
+</html>
